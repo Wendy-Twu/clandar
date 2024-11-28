@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    
 <?php
 
 if(isset($_GET['month'])){
@@ -70,25 +71,23 @@ $holidays = [
                 <a href="">明年</a>
             </td>
         </tr>
-        <tr>
             <td>
             <?php echo date("{$month}月");?>
         </td>
         </tr>
     </table>
 </div>
-<div class="calendar-body">
-    <div class="clandar-week-day">
-    <div>Sun</div>
-    <div>Mon</div>
-    <div>Tue</div>
-    <div>Wed</div>
-    <div>Thu</div>
-    <div>Fri</div>
-    <div>Sat</div>
-</div>
-</div>
 <table>
+<tr>
+    <td></td>
+    <td>Sun</td>
+    <td>Mon</td>
+    <td>Tue</td>
+    <td>Wed</td>
+    <td>Thu</td>
+    <td>Fri</td>
+    <td>Sat</td>
+</tr>
 <?php
 
 $firstDay="{$year}-{$month}-1";
